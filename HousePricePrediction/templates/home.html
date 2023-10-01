@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <style>
+            h2{
+                margin-top:50px;
+                font-size:40px;
+            }
+            body{
+                text-align: center;
+                background-image: url("{% static 'img1.jpeg' %}");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            input[type=submit]{
+                background-color: #000000;
+                color:white;
+                cursor:pointer;
+                padding:16px 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Welcome to</h2>
+        <h1>House Price Prediction System</h1>
+        <form action="predict">
+            <input type="submit" value="START">
+        </form>
+    </body>
+    </html>
+    
